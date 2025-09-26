@@ -1,0 +1,45 @@
+{
+  "name": "esbuild-plugin-vue",
+  "version": "0.9.3",
+  "description": "esbuild plugin to resolve .vue files",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/millken/esbuild-plugin-vue.git"
+  },
+  "module": "dist/index.mjs",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "/dist"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "prepublishOnly": "pnpm run build"
+  },
+  "keywords": [
+    "svelte",
+    "esbuild",
+    "plugin"
+  ],
+  "author": {
+    "name": "millken",
+    "url": "https://github.com/millken"
+  },
+  "license": "MIT",
+  "peerDependencies": {
+    "esbuild": ">=0.25.0",
+    "vue": ">=3.5.0"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "devDependencies": {
+    "@tsconfig/node22": "^22.0.2",
+    "@types/node": "^24.5.2",
+    "esbuild": "^0.25.10",
+    "tsup": "^8.5.0",
+    "typescript": "^5.9.2",
+    "vue": "^3.5.22"
+  }
+}
