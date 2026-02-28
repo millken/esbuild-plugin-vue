@@ -1,5 +1,5 @@
 {
-  "name": "esbuild-plugin-vue",
+  "name": "millken-esbuild-plugin-vue",
   "version": "0.9.3",
   "description": "esbuild plugin to resolve .vue files",
   "repository": {
@@ -18,7 +18,7 @@
     "prepublishOnly": "pnpm run build"
   },
   "keywords": [
-    "svelte",
+    "vue",
     "esbuild",
     "plugin"
   ],
