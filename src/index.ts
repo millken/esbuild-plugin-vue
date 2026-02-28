@@ -132,6 +132,7 @@ export default (options: VuePluginOptions = {}): Plugin => {
             contents += compiler.rewriteDefault(
               scriptResult.content,
               '__sfc_main',
+              isTS ? ['typescript'] : undefined,
             )
           } else {
             contents += `let __sfc_main = {}`
